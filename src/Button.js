@@ -1,7 +1,7 @@
-
-const Button = (text, actionOnClick) => {
+import "./Button.css";
+const Button = ({text, actionOnClick}) => {
   return (
-    <button onClick={actionOnClick} value={text}></button>
+    <button onClick={actionOnClick} className="button" > {text} </button>
   )
 }
 
